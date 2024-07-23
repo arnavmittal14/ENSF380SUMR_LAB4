@@ -1,1 +1,1 @@
-ENSF 380 summer lab 4
+Ex C of lab 4 which involves string manipulation and regex in java
