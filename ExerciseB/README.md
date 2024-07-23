@@ -1,1 +1,1 @@
-ENSF 380 summer lab 4
+Exercise B about array manipulation using java 
