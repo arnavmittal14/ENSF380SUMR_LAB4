@@ -9,7 +9,6 @@ class InvalidDateException extends Exception {
 public class DateFormatter {
 
     public static String normalizeDate(String date) {
-        // Regular expression to match date-like numbers with dashes or periods
         Pattern pattern = Pattern.compile("^(\\d{4})[-.](\\d{2})[-.](\\d{2})$|^(\\d{2})[-.](\\d{2})[-.](\\d{4})$");
         Matcher matcher = pattern.matcher(date);
         
@@ -20,12 +19,10 @@ public class DateFormatter {
         String year, month, day;
         
         if (matcher.group(1) != null) {
-            // yyyy-mm-dd or yyyy.mm.dd format
             year = matcher.group(1);
             month = matcher.group(2);
             day = matcher.group(3);
         } else {
-            // dd-mm-yyyy or dd.mm.yyyy format
             day = matcher.group(4);
             month = matcher.group(5);
             year = matcher.group(6);
