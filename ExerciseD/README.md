@@ -1,1 +1,1 @@
-ENSF 380 summer lab 4
+Exercise D involves formatting dates using regex and implementing invalid date checking.
